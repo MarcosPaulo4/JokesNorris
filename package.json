@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "elo-fiscal",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@chakra-ui/theme-tools": "^2.0.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.9.0",
+    "@hookform/resolvers": "^2.9.11",
+    "axios": "^1.4.0",
+    "date-fns": "^2.29.3",
+    "framer-motion": "^6.3.0",
+    "lodash": "^4.17.21",
+    "next": "^13.0.3",
+    "next-usequerystate": "^1.7.2",
+    "prettier": "^2.7.1",
+    "react": "^18.0.2",
+    "react-dom": "^18.0.2",
+    "react-hook-form": "^7.43.5",
+    "react-icons": "^4.10.1",
+    "react-query": "^3.39.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-virtuoso": "^4.1.0",
+    "swr": "^1.3.0",
+    "use-query-params": "^2.1.2",
+    "zod": "^3.21.4",
+    "zustand": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-icons": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "typescript": "^4.7.2"
+  }
+}

@@ -1,39 +1,32 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
+# JokesNorris
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
+Bem-vindo ao JokesNorris! Este é um projeto construído com Next.js, Chakra UI, TypeScript e gerenciado com Yarn. Neste documento, você encontrará instruções sobre como configurar e executar o projeto em sua máquina local.
 
-Next.js and chakra-ui have built-in TypeScript declarations, so we'll get autocompletion for their modules straight away.
+## Pré-requisitos
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Provider and theme so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-## Deploy your own
+- [Node.js](https://nodejs.org/) 
+- [Yarn](https://yarnpkg.com/) 
+- [Git](https://git-scm.com/) 
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui)
+## Configuração
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui&project-name=with-chakra-ui&repository-name=with-chakra-ui)
+1. Clone este repositório em sua máquina local:
 
-## How to use
+   ```bash
+   git clone https://github.com/MarcosPaulo4/JokesNorris.git
 
-### Using `create-next-app`
+2. Acesse o diretório do projeto: 
+    
+    cd jokesNorris
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+3. Instale as dependências usando o Yarn: 
 
-```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-```
+    yarn install
 
-```bash
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-```
+## Executando o projeto
 
-```bash
-pnpm create next-app --example with-chakra-ui with-chakra-ui-app
-```
+1. Inicie o servidor de desenvolvimento: 
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
-
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+    yarn dev

@@ -11,7 +11,7 @@ const Joke = ({value, url, categories}: JokeProps) => {
     return (
         <Flex  flexDir='column' alignItems='center' justifyContent='center' minHeight='100v' > 
         <Link color='orange.100' href={url} isExternal>
-            <Text fontSize='3vw' color='yellow.400' textAlign='center'>{value}</Text>
+            <Text fontSize='5vw' color='yellow.400' textAlign='center'>{value}</Text>
         </Link>
             <HStack spacing={3}>
                 {categories?.map((category) => (

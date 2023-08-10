@@ -1,17 +1,9 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 
-function Header() {
-    return (
-        <Flex mb='30px'>
-        <Box>
-            <Image
-            src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small.png" 
-            alt="ChuckNorris"
-            />
-        </Box>
-        </Flex>
-
-    )
+export default function Header() {
+  return (
+    <Text fontSize='3vw' color='yellow.200' textAlign='center' textDecoration='underline'>
+      JokesNorris
+    </Text>
+  )
 }
-
-export default Header;

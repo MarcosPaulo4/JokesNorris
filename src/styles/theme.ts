@@ -19,6 +19,10 @@ export const theme = extendTheme({
   // breakpoints,
   styles: {
     global: () => ({
+      body: {
+        fontFamily: 'Lobster, sans-serif',
+        bg: 'orange.700'
+      },
       html: {
         scrollBehavior: 'smooth',
       },

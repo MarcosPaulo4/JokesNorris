@@ -1,10 +1,11 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { CacheProvider } from '@contexts/emotion-cache.provider'
 import { theme } from '@styles/theme'
-import { Inter } from 'next/font/google'
+import { Lobster } from 'next/font/google'
 import Head from 'next/head'
 
-export const inter = Inter({
+export const lobster = Lobster({
+  weight: '400',
   subsets: ['latin'],
 })
 
@@ -18,7 +19,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           content="JokesNorris"
         />
       </Head>
-      <main className={inter.className}>
+      <main className={lobster.className}>
         <CacheProvider>
           <ChakraProvider theme={theme}>
                 <Component {...pageProps} />

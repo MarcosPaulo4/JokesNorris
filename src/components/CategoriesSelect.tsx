@@ -21,7 +21,7 @@ useEffect(() => {
 
 
   return (
-    <Select borderColor='orange.700'  placeholder='Qual seu tipo de humor?' onChange={({target}) => onChange(target.value)}>
+    <Select  variant='outline' bg='orange.200' borderColor='orange.700'  w='20rem' placeholder='Qual seu tipo de humor?' onChange={({target}) => onChange(target.value)}>
       {categories.map((category) => (
         <option key={category}>{category}</option>
       ))}

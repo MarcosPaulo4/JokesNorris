@@ -9,12 +9,14 @@ type JokeProps = Partial<IJoke>
 
 const Joke = ({value, url, categories}: JokeProps) => {
     return (
-        <Flex justifyContent='center' flexDir='column' borderColor='orange.700' p={4} borderWidth='1px' borderRadius='md' w={'full'}> 
-            <Text color='orange.900' as={Link} href={url} isExternal textAlign={'center'}>{value}</Text>
-            <HStack spacing={3} justifyContent='center'>
+        <Flex  flexDir='column' alignItems='center' justifyContent='center' minHeight='100v' > 
+        <Link color='orange.100' href={url} isExternal>
+            <Text fontSize='3vw' color='yellow.400' textAlign='center'>{value}</Text>
+        </Link>
+            <HStack spacing={3}>
                 {categories?.map((category) => (
-                    <Tooltip label={`Categoria: ${category.toLowerCase()}`}>
-                        <Tag key={category} colorScheme='teal'>
+                    <Tooltip label={`Categoria: ${category.toLowerCase()}`} key={category}>
+                        <Tag color='yellow.900'>
                         <TagLeftIcon as={AiOutlineTags} />
                         <TagLabel>{category}</TagLabel>
                     </Tag>

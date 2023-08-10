@@ -1,4 +1,4 @@
-import { Button, Center, Flex, VStack } from '@chakra-ui/react'
+import { Button, Center, Flex } from '@chakra-ui/react'
 import CategoriesSelect from '@components/CategoriesSelect'
 import Header from '@components/Header'
 import Joke from '@components/Joke'
@@ -22,20 +22,22 @@ const Home = () => {
 
 
 
-
-
-
-  return <Center flexDir='column' w='100vw' h='100vh'>
+  return (
+    <>
     <Header/>
-    <VStack spacing={3} w={'full'} maxW='60%'>
-      <Joke categories={joke?.categories} url={joke?.url} value={joke?.value}/>
-      <CategoriesSelect  onChange={setSelectedCategory} />
-
-      <Flex alignSelf='flex-end'>
-        <Button border='2px' borderColor='orange.700' bg='orange.300' _hover={{bg:'orange.500', borderColor: 'black'}} onClick={() => fetchJoke(selectedCategory) }>Make a Joke</Button>
-      </Flex>
-    </VStack>
+    <Center flexDir='column' w='100vw' h='80vh'>
+     <Joke categories={joke?.categories} url={joke?.url} value={joke?.value}/>
   </Center>
+    <Flex justifyContent='space-around' w='full'>
+      <CategoriesSelect  onChange={setSelectedCategory} />
+      <Button border='2px' borderColor='orange.700' bg='orange.300' _hover={{bg:'orange.500', borderColor: 'black'}} onClick={() => fetchJoke(selectedCategory) }>Make a Joke</Button>
+    </Flex>
+
+    
+    </>
+
+  ) 
+
 }
 
 export default Home
